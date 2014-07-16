@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>
+			PODCLOUD | Online podcast player
+		</title>
+		<meta charset="utf-8"/>
+		<!-- <link rel="stylesheet" type="text/css" media="screen" title="main" href="./css/main.css" /> -->
+		<link rel="stylesheet" type="text/css" media="screen" title="main" href="./bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" media="screen" title="main" href="./bootstrap/css/bootstrap-theme.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="./js/rss.js"></script>
+		<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+ 	</head>
+ 	
+ 	<body>
+ 		<div class="container-fluid">
+ 			<div class="row">
+				<div class="col-lg-12"><h1>POD CLOUD</h1></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-1" id="mainContent">
+					<div class="row">						
+						<div class="col-lg-12" id="feedDiv"></div>
+						<i class="glyphicon glyphicon-info-sign btn-lg" id="playbackControl"></i><span id="controls">Select episode to play</span><i class="glyphicon glyphicon-volume-down btn-lg" id="volDown"></i><span id="volumeIndicator"></span><i class="glyphicon glyphicon-volume-up btn-lg" id="volUp"></i>
+						<audio id="currentPodcast" src=""></audio>	
+					</div>							
+				</div>
+				<div class="col-lg-3" id="addFeed">
+					<div class="input-group">
+						<input class="form-control" id="newURL" type="text" placeholder="Add New Podcast"><span class="input-group-addon" id="addFeedButton"><i class="glyphicon glyphicon-plus"></i></span>
+					</div>
+					<div>
+						<button type="button" class="btn btn-default" id="clearButton">Clear All Feeds</button>				
+					</div>
+				</div>
+			</div>
+		</div>
+ 	</body>
+ </html>
